@@ -122,7 +122,7 @@
     font-size: clamp(2rem, 5vw, 5rem);
     font-weight: 900;
     line-height: 1.1;
-    white-space: normal;
+    white-space: nowrap;
     color: var(--text);
     animation: fadeUp 0.8s 0.2s ease both;
   }
@@ -558,42 +558,6 @@
     .service-icon { font-size: 1.6rem; margin-bottom: 10px; }
     .service-card h3 { font-size: 1rem; }
     .service-card p { font-size: 0.8rem; }
-  }
-
-  /* ===== Mobile Optimization ===== */
-  @media (max-width: 600px) {
-    nav {
-      padding: 14px 20px;
-    }
-
-    .nav-links {
-      display: none;
-    }
-
-    .hero-logo {
-      width: 180px;
-      height: 180px;
-    }
-
-    .hero h1 {
-      font-size: 2rem;
-      white-space: normal;
-    }
-
-    .services-grid {
-      grid-template-columns: 1fr 1fr;
-    }
-
-    .contact-cards {
-      flex-direction: column;
-    }
-
-    .float-btn {
-      left: 12px;
-      right: 12px;
-      font-size: 1rem;
-      padding: 14px 20px;
-    }
   }
 </style>
 </head>
