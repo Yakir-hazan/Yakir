@@ -254,8 +254,9 @@
     align-items: center;
     justify-content: center;
     font-size: 0.75rem;
-    transition: all 0.3s;
+    transition: background 0.3s, border-color 0.3s, color 0.3s;
     background: transparent;
+    color: transparent;
   }
 
   .service-card.selected .service-check {
@@ -593,6 +594,49 @@
     <p>מגוון רחב של שירותים מקצועיים לבית ולמשרד</p>
   </div>
   <div class="services-grid">
+    <div class="service-card reveal" onclick="toggleService(this, 'תיקונים וצבע', '🎨')">
+      <div class="service-check">✓</div>
+      <div class="service-icon">🎨</div>
+      <h3>תיקונים וצבע</h3>
+      <p>מילוי חורים, תיקוני גבס וצביעה מקצועית</p>
+    </div>
+    <div class="service-card reveal" onclick="toggleService(this, 'חיפויים וטפטים לקירות', '✨')">
+      <div class="service-check">✓</div>
+      <div class="service-icon">✨</div>
+      <h3>חיפויים וטפטים לקירות</h3>
+      <p>התקנת חיפויים, פאנלים דקורטיביים והדבקת טפטים לכל משטח</p>
+    </div>
+    <div class="service-card reveal" onclick="toggleService(this, 'רובה וטיפוח קירות', '🧱')">
+      <div class="service-check">✓</div>
+      <div class="service-icon"><svg width="40" height="40" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <!-- Top-left tile: beige -->
+        <rect x="2" y="2" width="13" height="13" rx="1.5" fill="#D9C9A8" stroke="#a89880" stroke-width="1"/>
+        <!-- Top-right tile: light gray -->
+        <rect x="17" y="2" width="13" height="13" rx="1.5" fill="#C8C8C8" stroke="#a0a0a0" stroke-width="1"/>
+        <!-- Bottom-left tile: white -->
+        <rect x="2" y="17" width="13" height="13" rx="1.5" fill="#EFEFEF" stroke="#b0b0b0" stroke-width="1"/>
+        <!-- Bottom-right tile: warm beige -->
+        <rect x="17" y="17" width="13" height="13" rx="1.5" fill="#C4B49A" stroke="#9a8870" stroke-width="1"/>
+        <!-- Trowel handle -->
+        <path d="M28 28 L46 13 L43 10 L26 26 Z" fill="#8B6914" stroke="#6b4f10" stroke-width="0.8"/>
+        <!-- Trowel blade -->
+        <path d="M26 26 L22 44 L28 42 L32 32 Z" fill="#aaa" stroke="#888" stroke-width="0.8"/>
+      </svg></div>
+      <h3>רובה וטיפוח קירות</h3>
+      <p>רובה מקצועי, טיפוח קירות וסיליקון</p>
+    </div>
+    <div class="service-card reveal" onclick="toggleService(this, 'תיקון נזילות/סתימות', '🔧')">
+      <div class="service-check">✓</div>
+      <div class="service-icon">🔧</div>
+      <h3>תיקון נזילות/סתימות</h3>
+      <p>פתרון מהיר לנזילות וסתימות בכל הבית</p>
+    </div>
+    <div class="service-card reveal" onclick="toggleService(this, 'עבודות חשמל קלות', '⚡')">
+      <div class="service-check">✓</div>
+      <div class="service-icon">⚡</div>
+      <h3>עבודות חשמל קלות</h3>
+      <p>החלפת שקעים, מפסקים ונקודות חשמל</p>
+    </div>
     <div class="service-card reveal" onclick="toggleService(this, 'תליית טלוויזיות', '📺')">
       <div class="service-check">✓</div>
       <div class="service-icon">📺</div>
@@ -629,42 +673,13 @@
       <h3>תליית מנורות</h3>
       <p>התקנת גופי תאורה שונים בבית ובמשרד</p>
     </div>
-    <div class="service-card reveal" onclick="toggleService(this, 'תיקונים וצבע', '🎨')">
-      <div class="service-check">✓</div>
-      <div class="service-icon">🎨</div>
-      <h3>תיקונים וצבע</h3>
-      <p>מילוי חורים, תיקוני גבס וצביעה מקצועית</p>
-    </div>
-    <div class="service-card reveal" onclick="toggleService(this, 'רובה וטיפוח קירות', '🪣')">
-      <div class="service-check">✓</div>
-      <div class="service-icon">🪣</div>
-      <h3>רובה וטיפוח קירות</h3>
-      <p>רובה מקצועי, טיפוח קירות וסיליקון</p>
-    </div>
     <div class="service-card reveal" onclick="toggleService(this, 'פירוק/הרכבת רהיטים', '🪚')">
       <div class="service-check">✓</div>
       <div class="service-icon">🪚</div>
       <h3>פירוק/הרכבת רהיטים</h3>
       <p>הרכבה ופירוק של כל סוגי הרהיטים</p>
     </div>
-    <div class="service-card reveal" onclick="toggleService(this, 'תיקון נזילות/סתימות', '🔧')">
-      <div class="service-check">✓</div>
-      <div class="service-icon">🔧</div>
-      <h3>תיקון נזילות/סתימות</h3>
-      <p>פתרון מהיר לנזילות וסתימות בכל הבית</p>
-    </div>
-    <div class="service-card reveal" onclick="toggleService(this, 'טפטים לקיר/זכוכית', '🪜')">
-      <div class="service-check">✓</div>
-      <div class="service-icon">🪜</div>
-      <h3>טפטים לקיר/זכוכית</h3>
-      <p>הדבקת טפטים ומדבקות לכל משטח</p>
-    </div>
-    <div class="service-card reveal" onclick="toggleService(this, 'חיפויים לקירות', '✨')">
-      <div class="service-check">✓</div>
-      <div class="service-icon">✨</div>
-      <h3>חיפויים לקירות</h3>
-      <p>התקנת חיפויים ופאנלים דקורטיביים</p>
-    </div>
+
   </div>
 </section>
 
@@ -738,9 +753,11 @@
     if (selectedServices.has(name)) {
       selectedServices.delete(name);
       card.classList.remove('selected');
+      card.setAttribute('data-selected', 'false');
     } else {
       selectedServices.add(name);
       card.classList.add('selected');
+      card.setAttribute('data-selected', 'true');
     }
     updateFloatBtn();
   }
