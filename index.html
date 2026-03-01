@@ -81,7 +81,7 @@
     align-items: center;
     justify-content: flex-start;
     text-align: center;
-    padding: 50px 20px 20px;
+    padding: 90px 20px 20px;
     gap: 4px;
     position: relative;
     overflow: hidden;
@@ -584,6 +584,7 @@
     <a class="btn btn-gold" href="https://wa.me/972527490871" target="_blank">💬 שלח/י הודעה בוואטסאפ</a>
     <a class="btn btn-outline" href="tel:0527490871">📞 0527490871</a>
   </div>
+  <p style="margin-top:16px; font-size:0.9rem; color:var(--gold); letter-spacing:1px; animation: fadeUp 0.8s 0.5s ease both;">✦ ייעוץ והצעת מחיר — חינם תמיד ✦</p>
 </section>
 
 <!-- SERVICES -->
@@ -639,31 +640,127 @@
     </div>
     <div class="service-card reveal" onclick="toggleService(this, 'תליית טלוויזיות', '📺')">
       <div class="service-check">✓</div>
-      <div class="service-icon">📺</div>
+      <div class="service-icon"><svg width="40" height="40" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="screenGrad" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#111111"/>
+            <stop offset="50%" stop-color="#080808"/>
+            <stop offset="100%" stop-color="#000000"/>
+          </linearGradient>
+          <linearGradient id="bodyGrad" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#2C2C2C"/>
+            <stop offset="100%" stop-color="#1a1a1a"/>
+          </linearGradient>
+        </defs>
+        <rect x="3" y="10" width="54" height="40" rx="3" fill="url(#bodyGrad)" stroke="#3a3a3a" stroke-width="1"/>
+        <rect x="6" y="13" width="48" height="32" rx="1.5" fill="url(#screenGrad)"/>
+        <path d="M9 16 L20 16 L9 26 Z" fill="white" fill-opacity="0.08"/>
+        <rect x="3" y="47" width="54" height="3" rx="1" fill="#222" stroke="#3a3a3a" stroke-width="0.5"/>
+        <circle cx="30" cy="48.5" r="1" fill="#00e5ff" fill-opacity="0.7"/>
+      </svg></div>
       <h3>תליית טלוויזיות</h3>
       <p>התקנה מקצועית של טלוויזיות לכל גודל ודגם</p>
     </div>
     <div class="service-card reveal" onclick="toggleService(this, 'תליית מראות', '🪞')">
       <div class="service-check">✓</div>
-      <div class="service-icon">🪞</div>
+      <div class="service-icon"><svg width="40" height="40" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="8" y="5" width="44" height="50" rx="2" fill="#7B4F2E"/>
+        <line x1="10" y1="8" x2="10" y2="53" stroke="#5C3820" stroke-width="0.8" opacity="0.5"/>
+        <line x1="14" y1="6" x2="14" y2="54" stroke="#5C3820" stroke-width="0.6" opacity="0.4"/>
+        <line x1="48" y1="6" x2="48" y2="54" stroke="#5C3820" stroke-width="0.8" opacity="0.5"/>
+        <rect x="11" y="8" width="38" height="44" rx="1" fill="#5C3820" fill-opacity="0.4"/>
+        <rect x="13" y="10" width="34" height="40" rx="1" fill="url(#mirrorGrad)"/>
+        <path d="M17 14 L24 14 L17 25 Z" fill="white" fill-opacity="0.35"/>
+        <line x1="38" y1="15" x2="43" y2="20" stroke="white" stroke-width="1" stroke-opacity="0.25"/>
+        <defs>
+          <linearGradient id="mirrorGrad" x1="13" y1="10" x2="47" y2="50" gradientUnits="userSpaceOnUse">
+            <stop offset="0%" stop-color="#D0DCE4" stop-opacity="0.9"/>
+            <stop offset="50%" stop-color="#9AAFC0" stop-opacity="0.7"/>
+            <stop offset="100%" stop-color="#7090A8" stop-opacity="0.8"/>
+          </linearGradient>
+        </defs>
+      </svg></div>
       <h3>תליית מראות</h3>
       <p>תליה בטוחה ומדויקת של מראות בכל גודל</p>
     </div>
     <div class="service-card reveal" onclick="toggleService(this, 'תליית וילונות', '🪟')">
       <div class="service-check">✓</div>
-      <div class="service-icon">🪟</div>
+      <div class="service-icon"><svg width="40" height="40" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="2" y="8" width="56" height="3" rx="1.5" fill="#8B5E3C"/>
+        <circle cx="2" cy="9.5" r="2.5" fill="#6B4423"/>
+        <circle cx="58" cy="9.5" r="2.5" fill="#6B4423"/>
+        <path d="M4 11 C4 11 8 20 6 35 C5 42 4 48 8 54 L20 54 C16 48 14 40 16 32 C18 24 14 16 12 11 Z" fill="#F0EDE8" fill-opacity="0.95"/>
+        <path d="M8 14 C9 22 8 30 9 38" stroke="#C8C4BE" stroke-width="0.8" stroke-opacity="0.8"/>
+        <path d="M12 13 C13 21 12 30 13 38" stroke="#C8C4BE" stroke-width="0.8" stroke-opacity="0.8"/>
+        <path d="M16 32 C20 30 22 32 20 36" stroke="#C9A84C" stroke-width="2" stroke-linecap="round"/>
+        <circle cx="18" cy="32" r="2" fill="#C9A84C"/>
+        <path d="M56 11 C56 11 52 20 54 35 C55 42 56 48 52 54 L40 54 C44 48 46 40 44 32 C42 24 46 16 48 11 Z" fill="#F0EDE8" fill-opacity="0.95"/>
+        <path d="M52 14 C51 22 52 30 51 38" stroke="#C8C4BE" stroke-width="0.8" stroke-opacity="0.8"/>
+        <path d="M48 13 C47 21 48 30 47 38" stroke="#C8C4BE" stroke-width="0.8" stroke-opacity="0.8"/>
+        <path d="M44 32 C40 30 38 32 40 36" stroke="#C9A84C" stroke-width="2" stroke-linecap="round"/>
+        <circle cx="42" cy="32" r="2" fill="#C9A84C"/>
+        <path d="M12 8 Q12 5 15 5 Q18 5 18 8" stroke="#C9A84C" stroke-width="1.2" fill="none"/>
+        <path d="M42 8 Q42 5 45 5 Q48 5 48 8" stroke="#C9A84C" stroke-width="1.2" fill="none"/>
+      </svg></div>
       <h3>תליית וילונות</h3>
       <p>התקנת מוטות ווילונות לכל סוגי החלונות</p>
     </div>
     <div class="service-card reveal" onclick="toggleService(this, 'תליית תמונות', '🖼️')">
       <div class="service-check">✓</div>
-      <div class="service-icon">🖼️</div>
+      <div class="service-icon"><svg width="40" height="40" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <clipPath id="imgClip">
+            <rect x="13" y="10" width="34" height="40" rx="1"/>
+          </clipPath>
+          <linearGradient id="woodGrad" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0%" stop-color="#8B5E3C"/>
+            <stop offset="40%" stop-color="#7B4F2E"/>
+            <stop offset="100%" stop-color="#6B4020"/>
+          </linearGradient>
+          <linearGradient id="skyGrad" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#1A1A6E"/>
+            <stop offset="50%" stop-color="#C0392B"/>
+            <stop offset="100%" stop-color="#E67E22"/>
+          </linearGradient>
+        </defs>
+        <rect x="8" y="5" width="44" height="50" rx="2" fill="url(#woodGrad)"/>
+        <line x1="10" y1="8" x2="10" y2="53" stroke="#5C3820" stroke-width="0.8" opacity="0.5"/>
+        <line x1="14" y1="6" x2="14" y2="54" stroke="#5C3820" stroke-width="0.6" opacity="0.4"/>
+        <line x1="48" y1="6" x2="48" y2="54" stroke="#5C3820" stroke-width="0.8" opacity="0.5"/>
+        <rect x="11" y="8" width="38" height="44" rx="1" fill="#5C3820" fill-opacity="0.3"/>
+        <rect x="13" y="10" width="34" height="40" fill="url(#skyGrad)" clip-path="url(#imgClip)"/>
+        <circle cx="30" cy="32" r="5" fill="#F39C12" clip-path="url(#imgClip)"/>
+        <circle cx="30" cy="32" r="3.5" fill="#F7DC6F" clip-path="url(#imgClip)"/>
+        <rect x="13" y="38" width="34" height="12" fill="#1A5276" clip-path="url(#imgClip)"/>
+        <line x1="15" y1="40" x2="25" y2="40" stroke="#5DADE2" stroke-width="0.7" opacity="0.5"/>
+        <line x1="28" y1="42" x2="40" y2="42" stroke="#5DADE2" stroke-width="0.7" opacity="0.5"/>
+        <line x1="14" y1="44" x2="22" y2="44" stroke="#5DADE2" stroke-width="0.7" opacity="0.4"/>
+        <line x1="33" y1="45" x2="44" y2="45" stroke="#5DADE2" stroke-width="0.7" opacity="0.4"/>
+        <ellipse cx="30" cy="39" rx="4" ry="1" fill="#F39C12" fill-opacity="0.4" clip-path="url(#imgClip)"/>
+        <path d="M13 38 Q20 28 27 35 Q33 28 40 33 Q44 30 47 35 L47 38 Z" fill="#1E8449" fill-opacity="0.7" clip-path="url(#imgClip)"/>
+      </svg></div>
       <h3>תליית תמונות</h3>
       <p>תליה מדויקת ויצירתית של תמונות ויצירות אמנות</p>
     </div>
     <div class="service-card reveal" onclick="toggleService(this, 'תליית מדפים', '🖨️')">
       <div class="service-check">✓</div>
-      <div class="service-icon">🖨️</div>
+      <div class="service-icon"><svg width="40" height="40" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="4" y="40" width="52" height="6" rx="2" fill="#8B5E3C"/>
+        <line x1="10" y1="42" x2="25" y2="42" stroke="#6B4423" stroke-width="0.8" opacity="0.6"/>
+        <line x1="30" y1="43" x2="50" y2="43" stroke="#6B4423" stroke-width="0.8" opacity="0.6"/>
+        <rect x="8" y="46" width="3" height="8" rx="1" fill="#6B4423"/>
+        <rect x="49" y="46" width="3" height="8" rx="1" fill="#6B4423"/>
+        <rect x="9" y="22" width="8" height="18" rx="1" fill="#C0392B"/>
+        <rect x="9" y="22" width="2" height="18" rx="1" fill="#96281B"/>
+        <rect x="19" y="26" width="7" height="14" rx="1" fill="#16A085"/>
+        <rect x="19" y="26" width="1.5" height="14" rx="1" fill="#0E6655"/>
+        <rect x="28" y="19" width="9" height="21" rx="1" fill="#2C3E7A"/>
+        <rect x="28" y="19" width="2" height="21" rx="1" fill="#1A2560"/>
+        <rect x="39" y="27" width="7" height="13" rx="1" fill="#D4AC0D"/>
+        <rect x="39" y="27" width="1.5" height="13" rx="1" fill="#A08A0A"/>
+        <rect x="48" y="24" width="6" height="16" rx="1" fill="#7D3C98"/>
+        <rect x="48" y="24" width="1.5" height="16" rx="1" fill="#5B2C6F"/>
+      </svg></div>
       <h3>תליית מדפים</h3>
       <p>התקנת מדפים יציבים לכל הצרכים</p>
     </div>
@@ -675,7 +772,25 @@
     </div>
     <div class="service-card reveal" onclick="toggleService(this, 'פירוק/הרכבת רהיטים', '🪚')">
       <div class="service-check">✓</div>
-      <div class="service-icon">🪚</div>
+      <div class="service-icon"><svg width="40" height="40" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="3" y="19" width="8" height="4" rx="1" fill="#999"/>
+        <path d="M3 19 L1 21 L3 23 Z" fill="#777"/>
+        <rect x="11" y="16" width="8" height="12" rx="2" fill="#2C3E50"/>
+        <rect x="11" y="17" width="4" height="10" rx="1" fill="#1a252f"/>
+        <rect x="17" y="14" width="28" height="16" rx="4" fill="#F1C40F"/>
+        <rect x="17" y="14" width="28" height="6" rx="3" fill="#1a1a1a"/>
+        <line x1="24" y1="15" x2="24" y2="19" stroke="#333" stroke-width="1"/>
+        <line x1="27" y1="15" x2="27" y2="19" stroke="#333" stroke-width="1"/>
+        <line x1="30" y1="15" x2="30" y2="19" stroke="#333" stroke-width="1"/>
+        <path d="M30 30 C28 30 26 32 26 35 L26 50 C26 52 28 54 30 54 L38 54 C40 54 42 52 42 50 L42 30 Z" fill="#1a1a1a"/>
+        <rect x="26" y="30" width="16" height="5" fill="#F1C40F"/>
+        <rect x="26" y="54" width="16" height="5" rx="2" fill="#333"/>
+        <path d="M42 36 C50 32 60 36 62 46 L58 52 C56 44 50 38 42 42 Z" fill="#D4A574"/>
+        <path d="M42 30 C46 29 50 31 50 35 C50 38 47 40 44 40 L42 42 L42 30 Z" fill="#D4A574"/>
+        <path d="M26 38 C22 37 20 40 22 43 C24 45 27 44 28 42 Z" fill="#D4A574"/>
+        <path d="M42 30 C42 26 44 24 46 25 C48 26 48 29 47 31" fill="#D4A574"/>
+        <path d="M44 32 C44 28 46 26 48 27 C50 28 50 31 49 33" fill="#C4955A" fill-opacity="0.7"/>
+      </svg></div>
       <h3>פירוק/הרכבת רהיטים</h3>
       <p>הרכבה ופירוק של כל סוגי הרהיטים</p>
     </div>
@@ -692,7 +807,7 @@
     <div class="section-title reveal">
       <div class="gold-line"></div>
       <h2>צור/י קשר</h2>
-      <p>לייעוץ והצעת מחיר — פנה/י אלינו עכשיו!</p>
+      <p>לייעוץ והצעת מחיר חינם — פנה/י אלינו עכשיו!</p>
     </div>
     <div class="contact-cards">
       <a class="contact-card reveal" href="https://wa.me/972527490871" target="_blank">
